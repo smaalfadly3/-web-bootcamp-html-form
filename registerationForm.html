@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign up Form</title>
+        <style>
+                        table{
+                            border-collapse: collapse;
+                            
+
+                 width: 50%; 
+                 color: #6d6875;
+
+            }
+            input[type="text"],input[type="password"],input[type="email"]  {
+                width: 50%;
+                padding: 2%;
+            } 
+            input{
+                width: 200pxs;
+            }
+            thead tr , tfoot tr td{
+                background-color: #d5bdaf;
+            }
+            th{
+                text-align: center;
+            }
+            tr td{
+                background-color:#f5ebe0;
+                padding: 16px;
+                border: none;
+                border-collapse: collapse;
+                padding-left: 5%;
+
+            }
+            tr{
+
+            }
+
+
+            body{
+                text-align: -webkit-center;
+                font-family: sans-serif;
+                align-content: center;
+                margin-top: 2%;
+            }
+            button{
+                border: 1px solid;
+                padding: 2% 5%;
+                border-radius: 35px;
+                color: #6d6875;
+                font-weight: bold;
+                cursor: pointer;
+            
+            }
+        </style>
+    </head>
+    <body>
+        <form method="post">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th colspan="2" style="padding: 2%; text-align: center; font-size: large;">Sign up</th>
+                </tr>            
+            </thead>
+            <tbody>
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" name="fname"></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" name="lname"></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Date of Birth</label>
+                    </td>
+                    <td>
+                        <select style="padding: 2%;">
+                            <option selected disabled>Day</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option><option>13</option>
+                            <option>14</option>
+                            <option>15</option><option>6</option>
+                            <option>17</option>
+                            <option>18</option><option>19</option>
+                            <option>20</option>
+                            <option>21</option><option>22</option>
+                            <option>23</option>
+                            <option>24</option><option>25</option>
+                            <option>26</option>
+                            <option>27</option><option>28</option>
+                            <option>29</option>
+                            <option>30</option><option>31</option>
+                        </select>
+                        <select style="padding: 2%;">
+                            <option selected disabled>Month</option>
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                        <select style="padding: 2%;">
+                            <option selected disabled>Year</option>
+                            <option value="1995">1995</option>
+                            <option value="1996">1996</option>
+                            <option value="1997">1997</option>
+                            <option value="1998">1998</option>
+                            <option value="1999">1999</option>
+                            <option value="2000">2000</option>
+                            <option value="2001">2001</option>
+                            <option value="2001">2001</option>
+
+                        </select>
+                        
+                        <!--
+                         <input type="date">
+                        <input type="month">
+                        <input type="">-->
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" checked name="gender">Male
+                        <input type="radio" name="gender">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td>
+                        <select name="country" style="width: 50%; padding: 2%;">
+                            <option selected>Country</option>
+                            <option >Yemen</option>
+                            <option >Kingdom of Saudi Arabia</option>
+                            <option >United States</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>E-mail</td>
+                    <td><input type="email" placeholder="Enter E-mail" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td><input type="text" placeholder="Enter Phone" name="phone"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="pass"></td>
+                </tr>
+                <tr>
+                    <td>Confirm Password</td>
+                    <td><input type="password" name="conPass"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center; padding-top: 3%;">                        
+                        <input type="checkbox" value="Hockey" name="agree">I Agree to the Terms of use<br>
+                    </td>
+                </tr>
+
+
+                
+                
+            </tbody>
+            <tfoot >
+                <tr>
+                    <td colspan="2" style="text-align:center; ">
+                        <button type="button">Cancel</button>
+                        <button type="submit">Submit </button>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+
+    </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Registration Form</title>
+        <style>
+            table{
+                border-collapse: collapse;
+                 margin-top: 4%; 
+                 width: 60%;
+                 background-color: #dde5b6;
+                 border:2px inset #432818;
+                 color: #432818;
+
+            }
+            input[type="text"],input[type="password"]  {
+                width: 50%;
+                padding: 2%;
+                border:1px solid #432818;
+         
+            } 
+         
+            textarea{
+                width: 50%;
+                padding: 2%;
+                border:1px solid #432818;
+            }
+            thead tr td{
+                padding: 5%;
+                
+            }
+          
+            th{
+                text-align: center;
+            }
+            tr td{
+                padding: 16px;
+                border-collapse: collapse;
+                border:3px inset #432818;
+
+
+            }
+            body{
+                text-align: -webkit-center;
+                font-family: sans-serif;
+            }
+            button{
+                border: 1px solid #432818;;
+                padding: 2% 5%;
+                color: #432818;
+                font-weight: bold;
+                cursor: pointer;
+                background-color: white;
+
+            
+            }
+        </style>
+    </head>
+    <body>
+        <form method="post">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th colspan="2" style="padding: 2%; text-align: center; font-size: large;">Registration Form</th>
+                </tr>            
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Enter Name</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Enter Password</td>
+                    <td><input type="password" name="pass"></td>
+                </tr>
+                <tr>
+                    <td>Enter Address</td>
+                    <td><textarea rows="3" name="address"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Select Game</td>
+                    <td>
+                        <input type="checkbox" value="Hockey" name="game">Hockey<br>
+                        <input type="checkbox" value="Football" name="game">Football<br>
+                        <input type="checkbox" value="Badminton" name="game">Badminton<br>
+                        <input type="checkbox" value="Cricket" name="game">Cricket<br>
+                        <input type="checkbox" value="Volleyball" name="game">Volleyball<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" checked name="gender">Male
+                        <input type="radio" name="gender">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Select ur age</td>
+                    <td>
+                        <select name="age" style="width: 50%;
+                        padding: 2%;
+                        border:1px solid #432818;">
+                            <option selected >Select</option>
+                            <option >18</option>
+                            <option >20</option>
+                            <option >25</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Select Photo</td>
+                    <td>
+                        <input type="file" name="photo">
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" style="text-align:center; ">
+                        <button type="button">Click Me</button>
+                        <button type="reset">Reset</button>
+                        <button type="submit">Submit Form</button>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+
+    </body>
+</html>
